@@ -16,7 +16,7 @@ class EmailParser
   
   def parse
     @emails = emails.split.map do |line|
-      line.split (",")
+      line.split(/[,|\s]/)-[""]
       @@all << line
     end
   end 
