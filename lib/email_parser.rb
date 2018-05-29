@@ -13,8 +13,7 @@ class EmailParser
   
   
   def parse
-    @emails = emails.split.each do |line|
-      line.split(/[,|\s]/)-[""]
+    @emails = emails.split(/[,|\s]/)-[""]
     end
   end 
 end
