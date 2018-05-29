@@ -13,7 +13,6 @@ class EmailParser
   
   def parse
     @emails = emails.split(/[,|\s]/)-[""]
-    @emails.index_by {|r| r[:email]}.values
   end 
 end
   
