@@ -15,8 +15,8 @@ class EmailParser
   
   
   def parse
-    @emails = emails.split.map do {
-    @@all<<self.new(emails)
+    @emails = emails.split.map do |line|
+      line.split (",")
   end 
 end
   
